@@ -67,18 +67,6 @@ function tambahNilai()
 
     $con = Connection();
 
-    // // Mendapatkan ID baru
-    // $search = showData("SELECT id FROM human ORDER BY id DESC LIMIT 1");
-    // foreach ($search as $human) {
-    //     $id = $human["id"];
-    // }
-
-    // if (empty($id)) {
-    //     $newid = 1;
-    // } else {
-    //     $newid = $id + 1;
-    // }
-
     //Data
     $data = "0";
 

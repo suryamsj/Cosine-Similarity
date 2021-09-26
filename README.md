@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://cosine.netlify.app">Demo</a>
+  <a href="https://cosine-similarity.suryamsj.my.id/">Demo</a>
 </div>
 
 <h1 align="center">Mencari Kecocokan Antara Aku dan Dia Menggunakan Metode Cosine Similarity</h1>
