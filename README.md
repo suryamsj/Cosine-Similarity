@@ -21,15 +21,16 @@
 </p>
 
 <p align="center">
-  <a href="#dart-tentang">Tentang</a> &#xa0; | &#xa0; 
-  <a href="#rocket-teknologi">Teknologi</a> &#xa0; | &#xa0;
-  <a href="#memo-lisensi">Lisensi</a> &#xa0; | &#xa0;
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/suryamsj" target="_blank">Author</a>
 </p>
 
 <br>
 
-## :dart: Tentang ##
+## :dart: About ##
 
 Cosine Similarity adalah metode untuk mengukur kemiripan antara 
 dua dokumen atau teks. Pada Cosine Similarity dokumen atau 
@@ -44,20 +45,24 @@ Untuk atribut yang digunakan :
 - Film = {hollywood, bollywood, anime, k-drama}
 - Musik = {inggris, indonesia, jepang, kpop}
 
-## :rocket: Teknologi ##
+## :rocket: Technologies ##
 
 Teknologi yang digunakan pada project ini:
 
-- [PHP](https://www.php.net/)
+- [XAMPP](https://www.apachefriends.org/index.html)
 - [Mysql](https://www.mysql.com/)
 - [Bootstrap 5](https://getbootstrap.com/)
 - [SweetAlert2](https://sweetalert2.github.io/)
 - [Vanilla-DataTables](https://github.com/Mobius1/Vanilla-DataTables)
 - [Storyset](https://storyset.com/)
 
-## :memo: Lisensi ##
+## :white_check_mark: Requirements ##
 
-Project ini berada dibawah lisensi MIT. Untuk lebih detailnya, silahkan cek file [LICENSE](LICENSE.md).
+Sebelum memulai :checkered_flag:, harap install [XAMPP](https://www.apachefriends.org/index.html) terlebih dahulu.
+
+## :memo: License ##
+
+Project ini berada dibawah lisensi MIT. Untuk lebih detailnya, silahkan cek file [LICENSE](LICENSE).
 
 
 Dibuat dengan :heart: oleh <a href="https://github.com/suryamsj" target="_blank">Muhammad Surya Jayadiprana</a>

@@ -46,7 +46,7 @@ if (isset($_POST["ubah"])) {
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">Beranda</li>
@@ -54,7 +54,11 @@ if (isset($_POST["ubah"])) {
                         <li class="breadcrumb-item active" aria-current="page">Ubah Data</li>
                     </ol>
                 </nav>
-                <div class="card">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
                     <div class="card-header">
                         Form Ubah
                     </div>

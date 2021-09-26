@@ -41,8 +41,19 @@ if (isset($_POST["ubah"])) {
 <section class="py-5">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Beranda</li>
+                        <li class="breadcrumb-item"><a href="index?page=data_nilai">Data Nilai</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Ubah Data</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card shadow-sm">
                     <div class="card-header">
                         Form Ubah
                     </div>
@@ -57,6 +68,16 @@ if (isset($_POST["ubah"])) {
                                 <button class="btn btn-primary" type="submit" name="ubah">Ubah</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        Perhatian
+                    </div>
+                    <div class="card-body">
+                        Isi dengan angka 1-5.
                     </div>
                 </div>
             </div>

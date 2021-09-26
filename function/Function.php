@@ -1,5 +1,7 @@
 <?php
 
+$id_human = rand(1, 9999);
+
 // Koneksi Ke Database
 function Connection()
 {
@@ -21,12 +23,14 @@ function showData($query)
 // Tambah Data Orang
 function tambahOrang($data)
 {
+    global $id_human;
     $con = Connection();
     $name = htmlspecialchars($data["name"]);
+    $jenis_kelamin = htmlspecialchars($data["jenis_kelamin"]);
 
     // Query
     tambahNilai();
-    $query = "INSERT INTO human VALUES (null,'$name')";
+    $query = "INSERT INTO human VALUES ('$id_human','$name','$jenis_kelamin')";
     mysqli_query($con, $query);
     return mysqli_affected_rows($con);
 }
@@ -50,6 +54,7 @@ function hapusOrang($id)
     $con = Connection();
 
     // Query
+    hapusNilai($id);
     $query = "DELETE FROM human WHERE id = $id";
     mysqli_query($con, $query);
     return mysqli_affected_rows($con);
@@ -58,26 +63,28 @@ function hapusOrang($id)
 // Tambah Data Nilai Otomatis Menjadi 0
 function tambahNilai()
 {
+    global $id_human;
+
     $con = Connection();
 
-    // Mendapatkan ID baru
-    $search = showData("SELECT id FROM human ORDER BY id DESC LIMIT 1");
-    foreach ($search as $human) {
-        $id = $human["id"];
-    }
+    // // Mendapatkan ID baru
+    // $search = showData("SELECT id FROM human ORDER BY id DESC LIMIT 1");
+    // foreach ($search as $human) {
+    //     $id = $human["id"];
+    // }
 
-    if (empty($id)) {
-        $newid = 1;
-    } else {
-        $newid = $id + 1;
-    }
+    // if (empty($id)) {
+    //     $newid = 1;
+    // } else {
+    //     $newid = $id + 1;
+    // }
 
     //Data
     $data = "0";
 
     //Query
     for ($i = 1; $i <= 20; $i++) {
-        $query = "INSERT INTO score VALUES (null, '$newid', '$i','$data')";
+        $query = "INSERT INTO score VALUES (null, '$id_human', '$i','$data')";
         mysqli_query($con, $query);
     }
     return mysqli_affected_rows($con);
@@ -92,6 +99,17 @@ function ubahNilai($data)
 
     // Query
     $query = "UPDATE score SET value = '$score' WHERE id = '$id'";
+    mysqli_query($con, $query);
+    return mysqli_affected_rows($con);
+}
+
+// Hapus Data Nilai Berdasarkan Id Orang
+function hapusNilai($id)
+{
+    $con = Connection();
+
+    // Query
+    $query = "DELETE FROM score WHERE human_id = $id";
     mysqli_query($con, $query);
     return mysqli_affected_rows($con);
 }

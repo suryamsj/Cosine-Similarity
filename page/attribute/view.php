@@ -9,6 +9,16 @@ $query = showData("SELECT * FROM attribute");
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Beranda</li>
+                        <li class="breadcrumb-item active" aria-current="page">Data Atribut</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card shadow-sm">
                     <div class="card-header">
                         Data Atribut

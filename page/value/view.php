@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
 // Include
 include("function/Function.php");
 
@@ -24,6 +26,16 @@ if (isset($_POST["kirim"])) {
 ?>
 <section class="py-5">
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Beranda</li>
+                        <li class="breadcrumb-item active" aria-current="page">Data Nilai</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
         <div class="row justify-content-end mb-3">
             <div class="col-md-6">
                 <div class="card shadow-sm">

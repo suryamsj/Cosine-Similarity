@@ -15,11 +15,15 @@ $query = showData("SELECT * FROM human");
                         <li class="breadcrumb-item active" aria-current="page">Data Orang</li>
                     </ol>
                 </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card shadow-sm">
                     <div class="card-header">
                         Data Orang
                         <div class="float-end">
-                            <a class="btn btn-primary btn-sm" href="index.php?page=tambah_data_orang"><i class="bi bi-plus-lg me-2"></i>Tambah Data</a>
+                            <a class="btn btn-primary btn-sm" href="index?page=tambah_data_orang"><i class="bi bi-plus-lg me-2"></i>Tambah Data</a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -29,6 +33,7 @@ $query = showData("SELECT * FROM human");
                                     <tr>
                                         <th>#</th>
                                         <th>Nama</th>
+                                        <th>Jenis Kelamin</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -38,8 +43,9 @@ $query = showData("SELECT * FROM human");
                                         <tr>
                                             <td><?= $i++ ?></td>
                                             <td><?= $data["name"] ?></td>
+                                            <td><?= $data["jenis_kelamin"] ?></td>
                                             <td>
-                                                <a class="btn btn-primary btn-sm" href="index.php?page=ubah_data_orang&id=<?= $data['id']; ?>" title="Ubah"><i class="bi bi-pencil-square"></i></a>
+                                                <a class="btn btn-primary btn-sm" href="index?page=ubah_data_orang&id=<?= $data['id']; ?>" title="Ubah"><i class="bi bi-pencil-square"></i></a>
                                                 <button class="btn btn-danger btn-sm" onclick="DeleteData()" title="Hapus">
                                                     <i class="bi bi-trash-fill"></i>
                                                 </button>

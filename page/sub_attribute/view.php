@@ -9,6 +9,16 @@ $query = showData("SELECT sub_attribute.id AS id,sub_attribute.name AS subatr, a
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Beranda</li>
+                        <li class="breadcrumb-item active" aria-current="page">Data Sub Atribut</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card shadow-sm">
                     <div class="card-header">
                         Data Sub Atribut
@@ -19,8 +29,8 @@ $query = showData("SELECT sub_attribute.id AS id,sub_attribute.name AS subatr, a
                                 <thead>
                                     <tr>
                                         <th>#</th>
+                                        <th>Atribut</th>
                                         <th>Sub Atribut</th>
-                                        <th>Nama</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -28,8 +38,8 @@ $query = showData("SELECT sub_attribute.id AS id,sub_attribute.name AS subatr, a
                                     <?php foreach ($query as $data) : ?>
                                         <tr>
                                             <td><?= $i++ ?></td>
-                                            <td><?= $data["subatr"] ?></td>
                                             <td><?= $data["name"] ?></td>
+                                            <td><?= $data["subatr"] ?></td>
                                         </tr>
                                     <?php endforeach ?>
                                 </tbody>
