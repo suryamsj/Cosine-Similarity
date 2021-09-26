@@ -16,8 +16,13 @@ section h1 {
     font-weight: 700;
 }
 
-section#home img {
+section img {
     width: 100%;
+}
+
+section#error p a {
+    text-decoration: none;
+    color: #DC3545;
 }
 
 .breadcrumb-item a {

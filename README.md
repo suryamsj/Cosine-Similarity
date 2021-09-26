@@ -57,7 +57,7 @@ Teknologi yang digunakan pada project ini:
 
 ## :memo: Lisensi ##
 
-Project ini berada dibawah lisensi MIT. Untuk lebih detailnya, silahkan cek file [LICENSE](LICENSE).
+Project ini berada dibawah lisensi MIT. Untuk lebih detailnya, silahkan cek file [LICENSE](LICENSE.md).
 
 
 Dibuat dengan :heart: oleh <a href="https://github.com/suryamsj" target="_blank">Muhammad Surya Jayadiprana</a>

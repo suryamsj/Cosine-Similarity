@@ -2,32 +2,27 @@
 // Include
 include("function/Function.php");
 
-// Variabel
-$id_orang = "";
-$nama_orang = "";
-
 // AMBIL ID
 $id = $_GET["id"];
 
 // QUERY
-$query = showData("SELECT * FROM human WHERE id = $id");
+$query = showData("SELECT * FROM score WHERE id = $id");
 
 // Melakukan Foreach
 foreach ($query as $data) {
-    $id_orang = $data["id"];
-    $nama_orang = $data["name"];
+    $value = $data["value"];
 }
 
 // Fungsi Ubah
 if (isset($_POST["ubah"])) {
-    if (ubahOrang($_POST) > 0) {
+    if (ubahNilai($_POST) > 0) {
         echo "<script>
         Swal.fire({
             icon: 'success',
             title: 'Berhasil',
             text: 'Data berhasil diubah'
         }).then(function() {
-            window.location.href = 'index.php?page=data_orang';
+            window.location.href = 'index.php?page=data_nilai';
         });
         </script>";
     } else {
@@ -37,7 +32,7 @@ if (isset($_POST["ubah"])) {
             title: 'Gagal',
             text: 'Data gagal diubah'
         }).then(function() {
-            window.location.href = 'index.php?page=data_orang';
+            window.location.href = 'index.php?page=data_nilai';
         });
         </script>";
     }
@@ -47,13 +42,6 @@ if (isset($_POST["ubah"])) {
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Beranda</li>
-                        <li class="breadcrumb-item"><a href="index.php?page=data_orang">Data Orang</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Ubah Data</li>
-                    </ol>
-                </nav>
                 <div class="card">
                     <div class="card-header">
                         Form Ubah
@@ -61,9 +49,9 @@ if (isset($_POST["ubah"])) {
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Nama Lengkap" name="name" value="<?= $nama_orang ?>" required autocomplete="off">
-                                <input type="hidden" name="id" value="<?= $id_orang ?>">
-                                <label for="name">Nama Lengkap</label>
+                                <input type="number" class="form-control" id="value" name="value" required min="0" max="5" value="<?= $value ?>">
+                                <input type="hidden" name="id" value="<?= $id ?>">
+                                <label for="value">Nilai</label>
                             </div>
                             <div class="float-end mb-3">
                                 <button class="btn btn-primary" type="submit" name="ubah">Ubah</button>

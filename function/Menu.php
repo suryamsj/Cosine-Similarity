@@ -23,14 +23,17 @@ if (isset($_GET['page'])) {
         case 'data_sub_atribut':
             include "page/sub_attribute/view.php";
             break;
-        case 'nilai':
+        case 'data_nilai':
             include "page/value/view.php";
+            break;
+        case 'ubah_data_nilai':
+            include "page/value/edit.php";
             break;
         case 'hasil':
             include "page/result/view.php";
             break;
         default:
-            echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
+            include "page/error.php";
             break;
     }
 } else {

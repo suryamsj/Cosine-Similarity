@@ -1,3 +1,6 @@
+// AOS
+AOS.init();
+
 // Datatable
 var dataTable = new DataTable("#table", {
     searchable: true,
