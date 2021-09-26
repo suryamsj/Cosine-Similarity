@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <!-- <a href="https://cosine.netlify.app">Demo</a> -->
+  <a href="https://cosine.netlify.app">Demo</a>
 </div>
 
 <h1 align="center">Mencari Kecocokan Antara Aku dan Dia Menggunakan Metode Cosine Similarity</h1>
@@ -23,7 +23,6 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/suryamsj" target="_blank">Author</a>
 </p>
@@ -50,15 +49,12 @@ Untuk atribut yang digunakan :
 Teknologi yang digunakan pada project ini:
 
 - [XAMPP](https://www.apachefriends.org/index.html)
+- [PHP](https://www.php.net/)
 - [Mysql](https://www.mysql.com/)
 - [Bootstrap 5](https://getbootstrap.com/)
 - [SweetAlert2](https://sweetalert2.github.io/)
 - [Vanilla-DataTables](https://github.com/Mobius1/Vanilla-DataTables)
 - [Storyset](https://storyset.com/)
-
-## :white_check_mark: Requirements ##
-
-Sebelum memulai :checkered_flag:, harap install [XAMPP](https://www.apachefriends.org/index.html) terlebih dahulu.
 
 ## :memo: License ##
 
