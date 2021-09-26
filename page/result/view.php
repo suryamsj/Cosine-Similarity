@@ -70,23 +70,23 @@ if (isset($_POST["kirim"])) {
                                 <div class="col-md-5">
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingSelect" name="id_pria">
-                                            <option selected disabled>Pilih data pria</option>
+                                            <option selected disabled>Pilih data aku</option>
                                             <?php foreach ($pria as $man) : ?>
                                                 <option value="<?= $man["id"] ?>"><?= $man["name"] ?></option>
                                             <?php endforeach ?>
                                         </select>
-                                        <label for="floatingSelect">Pilih data pria</label>
+                                        <label for="floatingSelect">Pilih data aku</label>
                                     </div>
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingSelect" name="id_wanita">
-                                            <option selected disabled>Pilih data wanita</option>
+                                            <option selected disabled>Pilih data dia</option>
                                             <?php foreach ($wanita as $women) : ?>
                                                 <option value="<?= $women["id"] ?>"><?= $women["name"] ?></option>
                                             <?php endforeach ?>
                                         </select>
-                                        <label for="floatingSelect">Pilih data wanita</label>
+                                        <label for="floatingSelect">Pilih data dia</label>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
@@ -137,7 +137,7 @@ if (isset($_POST["kirim"])) {
                 <div class="col-md-12">
                     <div class="card shadow-sm mb-5">
                         <div class="card-header">
-                            Data Kamu
+                            Data Dia
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
