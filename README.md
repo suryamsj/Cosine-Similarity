@@ -9,15 +9,15 @@
 <h1 align="center">Mencari Kecocokan Antara Aku dan Dia Menggunakan Metode Cosine Similarity</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/suryamsj/cosine?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/suryamsj/Cosine-Similarity?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/suryamsj/cosine?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/suryamsj/Cosine-Similarity?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/suryamsj/cosine?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/suryamsj/Cosine-Similarity?color=56BEB8">
 
-  <img alt="Github forks" src="https://img.shields.io/github/forks/suryamsj/cosine?color=56BEB8" />
+  <img alt="Github forks" src="https://img.shields.io/github/forks/suryamsj/Cosine-Similarity?color=56BEB8" />
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/suryamsj/cosine?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/suryamsj/Cosine-Similarity?color=56BEB8" />
 </p>
 
 <p align="center">
