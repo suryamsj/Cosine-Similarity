@@ -34,7 +34,7 @@
 
     <!-- Start Main -->
     <main class="flex-shrink-0">
-        <?php include('function/Menu.php') ?>
+        <?php require_once('function/Menu.php') ?>
     </main>
     <!-- End Main -->
 
